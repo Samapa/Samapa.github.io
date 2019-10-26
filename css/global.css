@@ -48,6 +48,31 @@ h3 {
     height: 90vh;
 }
 
+.header-container div {
+    position: absolute;
+    text-align: center;
+    z-index: 0;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-container div h2 {
+    font-size: 3em;
+    line-height: 2em;
+    background-color: var(--defualt-tone);
+}
+
+.header-container div h4 {
+    color: var(--hightlight-one);
+    line-height: 2em;
+}
+
+.header-container div a {
+    padding: 5%;
+}
+
 .fl-3 {
     width: 33%;
 }
@@ -72,6 +97,7 @@ h3 {
     left: 0;
     margin: auto;
     width: 100%;
+    z-index: 3;
   }
 
 header ul {
@@ -81,7 +107,6 @@ header ul {
     padding: 2% 5%;
     background-color: transparent;
     transition: ease 0.7s;
-    z-index: 3;
 }
 
 footer {
@@ -250,7 +275,7 @@ footer h5 {
 }
 
 .footer {
-    background-color: var(--hightlight-two);
+    background-color: var(--defualt-tone);
 }
 
 /* BUTTONS */
