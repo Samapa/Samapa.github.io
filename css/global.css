@@ -237,12 +237,12 @@ footer h5 {
 
 .socials ul a {
     background-color: var(--hightlight-one);
-    min-width: 3em;
-    min-height: 3em;
     margin: 1%;
+    padding: 2%;
     text-decoration: none;
     color: white;
     transition: all 0.4s;
+    text-align: center;
 }
 
 .socials ul a:hover {
@@ -345,5 +345,9 @@ footer h5 {
 
     .container div {
         margin: 0;
+    }
+
+    .header-container div {
+        display: none;
     }
 }
