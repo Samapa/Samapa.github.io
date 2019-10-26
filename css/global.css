@@ -1,7 +1,7 @@
 /* GLOBAL */
 :root {
     --hightlight-one: #f9ce1f;
-    --hightlight-two: black;
+    --hightlight-two: #fe2020;
     --defualt-tone: #413C58;
     --tone-two: #f6f5f1;
 }
@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5 {
 h3 {
     font-size: 2.5em;
     line-height: 2em;
+}
+
+#address {
+    line-height: 3em;
 }
 
 /* STRUCTURE */
@@ -73,12 +77,16 @@ h3 {
     padding: 5%;
 }
 
-.fl-3 {
-    width: 33%;
+.fl-1 {
+    width: 100%
 }
 
 .fl-2 {
     width: 50%;
+}
+
+.fl-3 {
+    width: 33%;
 }
 
 .fl-4 {
@@ -87,6 +95,11 @@ h3 {
 
 .text-box {
     padding: 1em 2em;
+}
+
+.box {
+    padding: 1%;
+    text-align: center;
 }
 
 /* MENU */
@@ -223,10 +236,9 @@ footer h5 {
 }
 
 .wood {
-    background-image: url('https://dph95f73vdxmz.cloudfront.net/uploads/tableBackground2.jpg');
+    background-image: url('https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
@@ -238,7 +250,7 @@ footer h5 {
 }
 
 .socials ul a {
-    background-color: var(--hightlight-one);
+    background-color: var(--hightlight-two);
     margin: 1%;
     padding: 2%;
     text-decoration: none;
@@ -254,7 +266,7 @@ footer h5 {
 }
 
 .drinks {
-    background-image: url('https://www.guzmanygomez.com/wp-content/uploads/2018/05/gyg-drinks.jpg');
+    background-image: url('https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -262,6 +274,10 @@ footer h5 {
 
 .cream {
     background-color: var(--tone-two);
+}
+
+.white {
+    background-color: white;
 }
 
 .purp {
@@ -272,12 +288,29 @@ footer h5 {
     color: white;
 }
 
+.yellow {
+    background-color: var(--hightlight-one);
+}
+
 .white {
     color: var(--defualt-tone);
 }
 
 .footer {
     background-color: var(--defualt-tone);
+}
+
+.bg-blue {
+    background-color: hsla(188, 64.19%, 92.55%, 1.00);
+    color: var(--defualt-tone);
+    transition: all 0.5s;
+}
+
+.bg-blue:hover {
+    background-color: var(--defualt-tone);
+    color: var(--hightlight-one);
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 /* BUTTONS */
@@ -323,6 +356,29 @@ footer h5 {
 .btn-box {
     padding: 2%;
     line-height: 5em;
+}
+
+.box img {
+    width: 8em;
+}
+
+.btn-drink {
+    color: var(--defualt-tone);
+    border: 1px solid var(--defualt-tone);
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.bg-blue:hover .btn-drink {
+    color: var(--hightlight-one);
+    border: 1px solid var(--hightlight-one);
+    transition: all 0.5s;
+}
+
+.bg-blue:hover .btn-drink:hover {
+    color: var(--defualt-tone);
+    background-color: var(--hightlight-one);
+    transition: all 0.5s;
 }
 
 @media only screen and (max-width: 600px) {
