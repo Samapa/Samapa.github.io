@@ -173,7 +173,9 @@ header ul li:first-child {
 
 /* IMGS */
 .header-container video {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
     z-index: -1;
     position: absolute;   
 }
@@ -336,7 +338,13 @@ footer h5 {
     }
     
     .header-container {
-        height: 20vh;
+        height: 50vh;
+    }
+
+    .header-container div {
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -15%);
     }
 
     .container {
@@ -347,7 +355,4 @@ footer h5 {
         margin: 0;
     }
 
-    .header-container div {
-        display: none;
-    }
 }
