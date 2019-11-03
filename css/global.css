@@ -86,7 +86,7 @@ h3 {
 }
 
 .header-container div h4 {
-    color: white;
+    color: var(--defualt-tone);
     line-height: 3em;
     font-size: 1.3em;
 }
@@ -174,7 +174,7 @@ footer ul li:hover {
 
 header ul li a {
     display: block;
-    color: #ffffff;
+    color: var(--defualt-tone);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -195,6 +195,10 @@ header ul li:first-child {
     padding: 1% 5%;
     background-color: var(--defualt-tone);
     transition: ease 0.7s;
+}
+
+.shrink a {
+    color: white;
 }
 
 .shrink a:hover {
