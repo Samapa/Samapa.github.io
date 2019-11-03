@@ -1,10 +1,20 @@
 /* GLOBAL */
 :root {
-    --hightlight-one: #f9ce1f;
-    --hightlight-two: #333333;
-    --defualt-tone: #413C58;
+    --hightlight-one: #fef200;
+    --hightlight-two: #fef200;
+    --defualt-tone: #201750;
     --tone-two: #f6f5f1;
 }
+
+@font-face {
+    font-family: "Helvetica Roman";
+    src: url("/src/fonts/HelveticaLTStd-Obl.woff") format("woff"),url("/src/fonts/HelveticaLTStd-Obl.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Helvetica Regular";
+    src: url("/src/fonts/HelveticaLTStd-Roman.woff.woff") format("woff"),url("/src/fonts/HelveticaLTStd-Roman.woff2") format("woff2");
+  }
 
 @keyframes slide {
     from { left: -150%; }
@@ -13,7 +23,7 @@
 
 body {
     color: #448FA3;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Helvetica Regular";
     line-height: 1.3em;
 }
 
@@ -293,7 +303,8 @@ footer h5 {
 }
 
 .socials ul a {
-    background-color: var(--hightlight-two);
+    background-color: var(--defualt-tone);
+    border: 1px solid transparent;
     margin: 1%;
     padding: 2%;
     text-decoration: none;
@@ -303,13 +314,14 @@ footer h5 {
 }
 
 .socials ul a:hover {
-    background-color: var(--defualt-tone);
-    color: var(--hightlight-one);
+    background-color: transparent;
+    border: 1px solid var(--defualt-tone);
+    color: var(--defualt-tone);
     transition: all 0.4s;
 }
 
-.drinks {
-    background-image: url('https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+.canvas {
+    background-image: url('/img/site-bg.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
