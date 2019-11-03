@@ -206,6 +206,14 @@ header ul li:first-child {
     color: var(--hightlight-one);
 }
 
+.copyright {
+    text-align: center;
+    padding: 1%;
+    background-color: var(--hightlight-one);
+    color: var(--defualt-tone);
+    font-size: 0.7em;
+}
+
 
 /* IMGS */
 
