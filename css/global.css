@@ -67,33 +67,19 @@ h3 {
 
 .header-container {
     height: 95vh;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.2));
 }
 
 .header-container div {
-    position: absolute;
+    position: sticky;
     text-align: center;
     z-index: 0;
     color: white;
     top: 50%;
+    width: 42%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1%;
-}
-
-.header-container div h2 {
-    font-size: 3em;
-    line-height: 1.5em;
-    background-color: var(--defualt-tone);
-    color: white;
-}
-
-.header-container div h4 {
-    line-height: 3em;
-    font-size: 1.3em;
-}
-
-.header-container div a {
-    padding: 5%;
+    transform: translate(-50%, -60%);
+    
 }
 
 .fl-1 {
@@ -221,8 +207,9 @@ header ul li:first-child {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: -1;
-    position: absolute;
+    top: 0;
+    z-index: -2;
+    position: fixed;
 }
 
 .img-mg img {
@@ -323,6 +310,14 @@ footer h5 {
     color: white;
 }
 
+.txt-purp {
+    color: var(--defualt-tone);
+}
+
+.txt-yellow {
+    color: var(--hightlight-two);
+}
+
 .burrito {
     background-image: url('https://www.guzmanygomez.com/wp-content/uploads/2018/05/gyg-burrito.jpg');
     background-size: cover;
@@ -386,10 +381,6 @@ footer h5 {
     background-color: var(--defualt-tone);
 }
 
-.purp {
-    color: white;
-}
-
 .yellow {
     background-color: var(--hightlight-one);
 }
@@ -400,6 +391,10 @@ footer h5 {
 
 .footer {
     background-color: var(--defualt-tone);
+}
+
+.pad-1 {
+    padding: 1%;
 }
 
 .bg-blue {
