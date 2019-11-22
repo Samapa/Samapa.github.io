@@ -25,26 +25,7 @@
 </head>
 
 <body>
-    <div class="header-parent">
-        <header>
-            <ul id="navbar">
-                <li>
-                    <a href="http://#" target="_blank" rel="noopener noreferrer">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="http://#" target="_blank" rel="noopener noreferrer">Work</a
-            >
-          </li>
-          <li>
-            <a href="http://#" target="_blank" rel="noopener noreferrer"
-              >Connect</a
-            >
-          </li>
-        </ul>
-      </header>
-    </div>
+    <?php include "./includes/header.php" ?>
 
     <div class="header-container">
       <div>
@@ -52,7 +33,7 @@
         <h4><span class="purp txt-yellow pad-1">marketer</span> <span class="purp txt-yellow pad-1">owner</span> <span class="purp txt-yellow pad-1">consultant</span> <span class="purp txt-yellow pad-1">video editor</span> <span class="purp txt-yellow pad-1">designer</span></h4>
         <a href="#" class="btn btn-box btn-white">View My Portfolio</a>
       </div>
-    <video src="/src/video.mp4" autoplay muted loop></video>
+    <video id="background" src="/src/video.mp4" autoplay muted loop></video>
     </div>
 
     <div class="purp">
@@ -107,7 +88,7 @@
                 <div class="img-overlay-content">
                     <h3>Redcity Roar Basket Redesign</h3>
                     <p>Social Content, Branding, Uniform Design, Logo Design</p>
-                    <a href="#" class="btn btn-box btn-portfolio">View Featured Project</a>
+                    <a href="redcity.php" class="btn btn-box btn-portfolio">View Featured Project</a>
                 </div>
             </div>
         </div>
@@ -117,7 +98,7 @@
                 <div class="img-overlay-content">
                     <h3>Photography</h3>
                     <p>Vehicle Photography, Event Photography</p>
-                    <a href="#" class="btn btn-box btn-portfolio">View My Gallery</a>
+                    <a href="/photography.php" class="btn btn-box btn-portfolio">View My Gallery</a>
                 </div>
             </div>
         </div>
@@ -131,7 +112,7 @@
                     A local Basket Ball club was going through a change of management and approached me to help with a new look & feel for their club. This project had me redesign a local Basket Ball accociations logo, uniforms & social media style. The brief was to modernise
                     the logo and creat
                 </p>
-                <a href="#" target="_blank" class="btn btn-box btn-purp">View the redesign</a
+                <a href="/pcb.php" class="btn btn-box btn-purp">View the redesign</a
           >
         </div>
         <div class="fl-2 mg-1 img-mg">
@@ -142,22 +123,22 @@
 
     <div class="container-fw" id="dark-content">
       <div class="fl-2 img-hv img-fw">
-          <img src="/img/portfolio/carsandcoffee/carscoffee-hero.jpg" />
+          <img src="/img/portfolio/apechimp/apechimp-hero.jpg" />
           <div class="img-overlay">
               <div class="img-overlay-content">
-                  <h3>Cars & Coffee</h3>
-                  <p>Social Promotion, Event Promotion, Event Co-orindation, Photography</p>
-                  <a href="#" class="btn btn-box btn-portfolio">View Event Summary</a>
+                  <h3>Apechimp</h3>
+                  <p>Web Development</p>
+                  <a href="/apechimp.php" class="btn btn-box btn-portfolio">View Event Summary</a>
             </div>
         </div>
     </div>
     <div class="fl-2 img-hv img-fw">
-        <img src="/img/portfolio/wilsonsboathouse/wilsons-hero.jpg" />
+        <img src="/img/portfolio/eahbrand/eah-hero.jpg" />
         <div class="img-overlay">
             <div class="img-overlay-content">
-                <h3>Wilsons Boathouse</h3>
-                <p>Social Media, Design, Strategy, Search Engine Marketing</p>
-                <a href="#" class="btn btn-box btn-portfolio">View Project</a>
+                <h3>Eagers Automotive Holdings</h3>
+                <p>Branding, Strategy, Vision, Color, Logo, Presentation</p>
+                <a href="eah.php" class="btn btn-box btn-portfolio">View Project</a>
             </div>
         </div>
     </div>
@@ -281,28 +262,9 @@
     </footer>
 
     -->
-    <div class="socials">
-        <ul class="purp">
-            <a target="_blank" href="https://www.linkedin.com/in/samuel-robert-palmer/">
-                <li>LinkedIn</li>
-            </a>
-            <a target="_blank" href="https://twitter.com/EsSamapa">
-                <li>Twitter</li>
-            </a>
-            <a target="_blank" href="https://instagram.com/samsamapapalmer/">
-                <li>Instagram</li>
-            </a>
-        </ul>
-    </div>
+ 
 
-    <div class="copyright">
-        <p><small>&copy;</small> Copyright 2019, Samuel Palmer</p>
-    </div>
-
-    <!-- 
-        SCRIPTS
-    -->
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <?php include "./includes/footer.php" ?>
 </body>
 
 </html>
